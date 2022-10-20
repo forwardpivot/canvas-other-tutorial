@@ -22,6 +22,7 @@ ctx.lineTo(210,410);
 ctx.lineTo(210, 650);
 ctx.lineTo(510, 50);
 ctx.strokeStyle = "#da6731"
+ctx.closePath(); //This connects the first, and last points of a line
 ctx.stroke();
 
 //arc
@@ -34,6 +35,17 @@ for (let i = 0, x = 200, y = 200 ; i < 5; i++) {
     ctx.beginPath();
     ctx.arc(x, y, 30, 0, Math.PI * 2);
     ctx.strokeStyle = 'red';
+    ctx.stroke();
+    x += 100;
+    y += 100;
+}
+
+for (let i = 0; i < 5; i++) {
+    let x = Math.random() * innerWidth;
+    let y = Math.random() * innerHeight;
+    ctx.beginPath();
+    ctx.arc(x, y, 30, 0, Math.PI * 2);
+    ctx.strokeStyle = 'orange';
     ctx.stroke();
     x += 100;
     y += 100;
