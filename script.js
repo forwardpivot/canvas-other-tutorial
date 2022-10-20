@@ -2,3 +2,10 @@ const resizeCanvas = document.querySelector('#resizeCanvas');
 //Resizes the canvas to fit the screen
 resizeCanvas.width = window.innerWidth;
 resizeCanvas.height = window.innerHeight;
+
+const ctx = resizeCanvas.getContext('2d');
+
+ctx.fillRect(100, 100, 100, 100);
+ctx.fillRect(200, 200, 100, 100);
+ctx.fillRect(300, 300, 100, 100);
+ctx.fillRect(400, 400, 100, 100);
