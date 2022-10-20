@@ -1,0 +1,14 @@
+* {
+    /* Gets rid of the default styling for all elements */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Gets ride of the scrollbar */
+    overflow: hidden;
+}
+
+#resizeCanvas {
+    border: 1px solid black;
+}
