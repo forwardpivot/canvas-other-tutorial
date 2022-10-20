@@ -5,9 +5,13 @@ resizeCanvas.height = window.innerHeight;
 
 const ctx = resizeCanvas.getContext('2d');
 
+ctx.fillStyle = '#f532c1'
 ctx.fillRect(100, 100, 100, 100);
+ctx.fillStyle = '#ff7'
 ctx.fillRect(200, 200, 100, 100);
+ctx.fillStyle = '#a56'
 ctx.fillRect(300, 300, 100, 100);
+ctx.fillStyle = 'green'
 ctx.fillRect(400, 400, 100, 100);
 
 ctx.beginPath();
